@@ -42,6 +42,11 @@ body{
     display: none;
 }
 
+.menu-hover:hover{
+    display: block;
+}
+ 
+
 .logo{
     font-size: 3rem;
     color: var(--text-color);
@@ -345,9 +350,9 @@ input:checked + .slider:before {
 
 :root{
     --bg-color: #080808;
-    --second-bg-color: #001005;
+    --second-bg-color: #000000;
     --text-color: rgb(215, 201, 199);
-    --main-color: #6339ea;
+    --main-color: #ffff5d;
 }
 
 [data-theme= "dark" ]{
@@ -358,10 +363,10 @@ input:checked + .slider:before {
 }
 
 [data-theme= "light" ]{
-    --bg-color: #f1f6ff;
-    --second-bg-color: #f1f6ff;
+    --bg-color: #c1c8d6;
+    --second-bg-color: #c2c6cf;
     --text-color: rgb(0, 0, 0);
-    --main-color: #0d3dad;
+    --main-color: #3679cb;
 }
 
 .heading{
@@ -382,9 +387,9 @@ input:checked + .slider:before {
 
 .skill-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .skill-box{
@@ -392,7 +397,7 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    height: 250;
+    height: 200;
     border-radius: 3rem;
     cursor: pointer;
     border: 5px solid transparent;
@@ -413,15 +418,15 @@ input:checked + .slider:before {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .skill-info i{
-    font-size: 8rem;
+    font-size: 4rem;
 }
 
 .skill-info h4{
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin: 2rem 0;
     font-weight: 800;
 }
@@ -450,19 +455,17 @@ input:checked + .slider:before {
     align-items: center;
     background-color: var(--main-color);
     
-    width: 2000;
-    border-radius: 2rem ;  
+    background-color: var(--main-color);
+    padding: 30px; 
+    border-radius: 1em;
+    margin: 10px;
     cursor: pointer;
-    border: 5px solid transparent;  
-    transition: 0.4s ease-in-out;   
-    margin: 1.5rem; 
-    padding: 2rem;
-    
-    
+    transition: 0.3s ease-in-out;
+    margin: 2rem;
   }
 
   .exp-box .exp-info{
-   padding: 2%;
+   padding: 1%;
   }
 
 .exp-box .exp-info p{
@@ -470,13 +473,13 @@ input:checked + .slider:before {
 }
 
 .exp-info h3 span{ 
-    font-size: 2.5rem;  
+    font-size: 2.2rem;  
     font-weight: 800;
     color: black; 
 }
 
 .exp-info h4 span{ 
-    font-size: 1.8rem; 
+    font-size: 1.5rem; 
     font-weight: 800;
     color: black;
     font-style: italic; 
@@ -490,13 +493,12 @@ input:checked + .slider:before {
     justify-content: center;
     transition: visibility 0s, opacity 0.4s ease-in-out; 
     
-    
 }
 
 .exp-box:hover { 
     background-color: var(--second-bg-color); 
     color:  var(--main-color); 
-    font-size: 2rem;
+    font-size: 1rem;
     border: 5px solid var(--second-bg-color);
     transform: scale(1.03);
     
@@ -516,6 +518,139 @@ input:checked + .slider:before {
    color:var(--main-color); ;
 }
 
+.timeline-section{
+    min-height: 100vh;
+    padding: 100px 15px;
+    background: var(--bg-color);
+    
+}
+
+.timeline-section h2{
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1000px;
+     margin: auto;
+     display: flex; 
+     flex-wrap: wrap;
+     position: relative;  
+
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 3px; 
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+    height: 100%; 
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position:  relative;
+    
+}
+
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-date{
+    padding-left: calc(50% + 90px);
+    
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: calc(50% - 7px);
+    border-radius: 50%;
+    top: 0px; 
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin: 6px 0 15px;
+}
+
+.timeline-content p{
+    font-size: 0rem; 
+}
+
+.timeline-content{
+    
+    background-color: var(--main-color);
+    padding: 30px; 
+    border-radius: 1em;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.timeline-content:hover{
+    background-color: var(--second-bg-color); 
+    color:  var(--main-color); 
+    font-size: 1rem;
+    border: 5px solid var(--second-bg-color);
+    transform: scale(1.05); 
+}
+
+
+.timeline-content:hover  h3  {
+    color: var(--main-color); 
+}
+
+.timeline-content:hover  h4  {
+    color: var(--main-color); 
+}
+
+.timeline-content h4 { 
+    font-size: 1.2rem; 
+    font-weight: 800;
+    color: black;
+    font-style: italic; 
+    gap: 1rem; 
+}
+ 
+.timeline-content:hover  p {
+   padding-top: 1rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 22px;
+   color:var(--main-color); 
+   opacity: 0.8; 
+  
+}
+
+
+.timeline-content h3 { 
+    font-size: 15px;  
+    font-weight: 800;
+    color: black; 
+    margin: 0 0 10px ;
+    text-transform: capitalize;
+} 
+
+
+
+  
 .contact{
     background-color: var(--second-bg-color);
 
@@ -635,6 +770,8 @@ input:checked + .slider:before {
 
     }
 
+     
+
 
     .navbar{
         position: absolute;
@@ -651,6 +788,8 @@ input:checked + .slider:before {
         display: none;
 
     }
+
+     
 
     .navbar a{
         display: block;
