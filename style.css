@@ -124,9 +124,9 @@ span{
 
 
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.8; 
 } 
 
 .text-anim{
@@ -174,7 +174,7 @@ span{
 
 .home-img img{
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 0%;
     box-shadow: 0 0 25px var(--main-color);  
     
 }
@@ -270,6 +270,8 @@ span{
   transition: .4s;
 }
 
+
+
 .slider:before {
     background-color: #fff;
     bottom: 4px;
@@ -307,7 +309,7 @@ input:checked + .slider:before {
  }
 
  .about-img img{
-    width: 32vw;
+    width: 30vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color); 
     transition: 0.4s ease-in-out; 
@@ -324,12 +326,14 @@ input:checked + .slider:before {
 
 .about-content h2{
     font-size: 7rem;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 3rem;
 
 }
 
 .about-content p{
-    font-size: 1.8rem; 
+    font-size: 1.8rem;  
+    text-align: center;
  }
  
 
@@ -352,21 +356,21 @@ input:checked + .slider:before {
     --bg-color: #080808;
     --second-bg-color: #000000;
     --text-color: rgb(215, 201, 199);
-    --main-color: #ffff5d;
+    --main-color: #5d8bff;
 }
 
 [data-theme= "dark" ]{
     --bg-color: #080808;
     --second-bg-color: #001005;
     --text-color: rgb(215, 201, 199);
-    --main-color: #ffff5d;
+    --main-color: #82bcdf;
 }
 
 [data-theme= "light" ]{
     --bg-color: #c1c8d6;
     --second-bg-color: #c2c6cf;
     --text-color: rgb(0, 0, 0);
-    --main-color: #3679cb;
+    --main-color: #495889;
 }
 
 .heading{
@@ -375,15 +379,18 @@ input:checked + .slider:before {
     margin: 5 rem 0;
 }
 
-.skills{
+.skills .skill-table{
     background-color: var(--bg-color);
     color: black;
+    display: grid;
 } 
-
+ 
 .skills h2{
     color: var(--text-color);
-    margin: 2rem;
+    margin: 4rem;   
 }
+
+ 
 
 .skill-container{
     display: grid;
@@ -396,7 +403,8 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
     height: 200;
     border-radius: 3rem;
     cursor: pointer;
@@ -405,10 +413,9 @@ input:checked + .slider:before {
 }
 
 .skill-box:hover{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
   
-    color:  var(--main-color); 
-    border: 5px solid var(--second-bg-color);
+    color:  var(--main-color);  
     transform: scale(1.03);
 }
 
@@ -422,7 +429,7 @@ input:checked + .slider:before {
 }
 
 .skill-info i{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .skill-info h4{
@@ -819,7 +826,7 @@ input:checked + .slider:before {
     }
 
     .home-img img{
-        width: 52vw;
+        width: 32vw;
     }
     .about{
         flex-direction: column-reverse;
@@ -832,7 +839,7 @@ input:checked + .slider:before {
     }
 
     .about img{
-        width: 52vw;
+        width: 32vw;
     }
 
     .contact form{
@@ -849,7 +856,7 @@ input:checked + .slider:before {
 @keyframes words{
     0%,
     20%{
-        content: 'Python Developer'; 
+        content: 'Software Engineer'; 
     }
     21%,
     40%{
