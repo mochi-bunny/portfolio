@@ -8,8 +8,7 @@
     <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
-    />
-
+    /> 
     <link href="https://css.gg/css" rel="stylesheet" />
 
 <!-- UNPKG -->
@@ -339,19 +338,19 @@
 
 <section class="contact" id="contact">
     <h2 class="heading">Contact</h2>
-    <form name="form1">
-    <div class="input-grp">
+    <form name="form1" method="post"  action="">
+        <div class="input-grp">
         <div class="input-box">
-            <input type="text" id="name"   placeholder="Full Name" required> 
-            <input type="email" placeholder="E-mail" id="email"  required>
+            <input type="text" id="name"  name="name" placeholder="Full Name" required> 
+            <input type="email" placeholder="E-mail" name="email" id="email"  required>
         
-                <input type="number" id='phone' placeholder="Phone Number">
-                <input type="subject" id="subject" placeholder="Subject" >
+                <input type="text" id='phone' name="phone" placeholder="Phone Number">
+                <input type="subject" id="subject" name="subject" placeholder="Subject" >
         </div> 
     </div>
         <div class="input-grp2">
-            <textarea name="" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <br>    <button type="submit"  class="btn"  onclick="sendMail(); clearField();"   >Submit</button>
+            <textarea name="message" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <br>    <button type="submit" value="Submit"  class="btn"   >Submit</button>
              
         </div>
     </form>
