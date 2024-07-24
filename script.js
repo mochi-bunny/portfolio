@@ -1,6 +1,15 @@
  
  
+scriptURL= "https://script.google.com/macros/s/AKfycbyQLm3-j9_1keJVPUGqfx_LAs_JFfAvu-gg4fwV67ht-iJM_y_QNqYOkybi27JrgF-p/exec";
+const form = document.forms['form1'];
 
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+    sendMail();
+  })
 
 const menuicon= document.querySelector('#menu-icon');
 const navbar= document.querySelector('.navbar');
@@ -8,25 +17,13 @@ menuicon.onclick = () => {
     menuicon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
- 
-
+  
 function sendMail(){ 
-    let params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById('subject').value,
-        text: document.getElementById("text").value,
-        phone: document.getElementById('phone').value,
-
-    }
+   var frm= document.getElementsByName('form1')[0];
+     //var frm = document.getElementsByName('contact-form')[0];
     
-    emailjs.send("service_mvjsqmd","template_jllr1xv", params) .then(function(response) {
-        alert("Form submitted.");
-        console.log("SUCCESS!", response.status, response.text);
-    }, function(error) {
-        console.log("FAILED...", error);
-        alert("Form submission failed. Please try again later.");
-    }); 
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
 }
 
 
