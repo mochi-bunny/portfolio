@@ -379,45 +379,29 @@ input:checked + .slider:before {
     margin: 5 rem 0;
 }
 
-.skills .skill-table{
-    gap:1.5rem ;
+
+.skills{
     background-color: var(--bg-color);
     color: black;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-    
 } 
- 
-.skills h2{
-    color: var(--main-color);
-    margin: 4rem;   
-}
 
+.skills h2{
+    color: var(--text-color);
+    margin: 2rem;
+}
 
 .skill-container{
-    padding-left: 2rem;
-    display: list-item; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     gap: 1.5rem;
-    max-width: auto;
-    border-color: var(--main-color);
-    background-color: var(--bg-color);
-    
-    border-radius: 5%;
-}
-
-.skill-container h3{
-    color: var(--main-color);
-    text-align: left;
-    font-size: 3rem;
 }
 
 .skill-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--main-color);
     height: 200;
     border-radius: 3rem;
     cursor: pointer;
@@ -426,9 +410,11 @@ input:checked + .slider:before {
 }
 
 .skill-box:hover{
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
+  
+    color:  var(--main-color); 
+    border: 5px solid var(--second-bg-color);
     transform: scale(1.03);
-    color: var(--bg-color);
 }
 
 .skill-info{
@@ -441,15 +427,7 @@ input:checked + .slider:before {
 }
 
 .skill-info i{
-    font-size: 3rem;
-}
-
- 
-
-.skill-info span{ 
-    width: 20rem; 
-    color: #000000;
-
+    font-size: 4rem;
 }
 
 .skill-info h4{
@@ -457,6 +435,8 @@ input:checked + .slider:before {
     margin: 2rem 0;
     font-weight: 800;
 }
+ 
+ 
   
 
 
