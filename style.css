@@ -399,10 +399,10 @@ input:checked + .slider:before {
     display: list-item; 
     align-items: center;
     gap: 1.5rem;
-    max-width: 50rem;
+    max-width: auto;
     border-color: var(--main-color);
-    background-color: #5d8bff;
-    border-style:double;
+    background-color: var(--bg-color);
+    
     border-radius: 5%;
 }
 
