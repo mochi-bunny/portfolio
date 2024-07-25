@@ -437,16 +437,21 @@ input:checked + .slider:before {
     margin: 2rem 0;
     font-weight: 800;
 }
- 
+  
+.sidecols{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
 
 .exp{
     background-color: var(--bg-color);
     color: black;
+    margin-left: 0%;
 }
 
 .exp h2{
     color: var(--text-color);
-    margin: 2rem;
+    margin: 0rem;
 }
 
 .exp-container{
