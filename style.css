@@ -416,8 +416,8 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
-    color: var(--bg-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
     height: 200;
     border-radius: 3rem;
     cursor: pointer;
@@ -425,10 +425,10 @@ input:checked + .slider:before {
     transition: 0.4s ease-in-out;
 }
 
-.skill-container:hover{
-    background-color: var(--bg-color);
+.skill-box:hover{
+    background-color: var(--main-color);
     transform: scale(1.03);
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 
 .skill-info{
