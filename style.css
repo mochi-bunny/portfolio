@@ -573,13 +573,20 @@ input:checked + .slider:before {
 }
 
 .timeline-item:nth-child(odd) .timeline-date{
-    padding-left: calc(50% + 90px);
+    padding-left: calc(50% + 35px);
     
 }
 
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
 }
+
+.timeline-item:nth-child(even) .timeline-date{
+    padding-right: calc(50% + 1px);
+    
+}
+
+
 
 .timeline-dot{
     height: 15px;
