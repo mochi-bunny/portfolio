@@ -63,3 +63,233 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+
+
+
+const rootElement = document.documentElement;
+
+// Use getComputedStyle to get all computed styles of the element
+const styles = getComputedStyle(rootElement);
+
+// Retrieve the value of the CSS variable
+const bgColor = 'rgba(80, 104, 212, 0.7)' ;
+
+ 
+
+// Retrieve the value of the CSS variable
+const mainColor = styles.getPropertyValue('--main-color').trim();
+
+const gridcolor= 'rgb(80, 104, 212,0.5)';
+const anglelines = 'rgba(80, 104, 212, 0.2)';
+
+const txtcolor = 'rgb(80, 104, 212)';
+
+const data =  {
+    labels: ['Python', 'Java', 'C', 'C#', 'HTML/CSS', 'JavaScript' ],
+    datasets: [{
+      label: 'Languages',
+      data: [89, 80, 30, 75, 85, 80 ],
+      backgroundColor: bgColor ,
+      borderColor: anglelines,
+      pointHoverBorderColor: bgColor,
+      borderWidth: 3
+    }]
+  };
+
+const ctx=document.getElementById('chart1');
+	new Chart(ctx,{
+		type:'radar',
+		data: data,
+		options:{
+			 
+			responsive:true,
+			maintainAspectRatio:false,
+            scales: {
+                  
+                r:{
+                    angleLines: {
+                        color: anglelines
+                      },
+
+                      pointLabels: {
+                        color: txtcolor
+                      },
+
+                      grid: {
+                        color: gridcolor
+                     } ,
+
+                     ticks:{
+                        display: false 
+                    }
+
+                },
+ 
+            },
+
+            plugins: {
+                title: {
+                   color: txtcolor,
+                    
+                }
+            }
+		}
+	});
+
+const data2 =  {
+        labels: ['Tensorflow', 'Scikit-Learn', 'Seaborn & Matplotlib', 'Pandas', 'NLTK', 'PyTorch' ],
+        datasets: [{
+          label: 'Libraries',
+          data: [87,82,70,80,89,77 ],
+          backgroundColor: bgColor ,
+          borderColor: 'light blue',
+          pointHoverBorderColor: 'black',
+          borderWidth: 1
+        }]
+      };
+    
+const ctx2=document.getElementById('chart2');
+new Chart(ctx2,{
+    type:'radar',
+    data: data2,
+    options:{
+			 
+        responsive:true,
+        maintainAspectRatio:false,
+        scales: {
+              
+            r:{
+                angleLines: {
+                    color: anglelines
+                  },
+
+                  pointLabels: {
+                    color: txtcolor
+                  },
+
+                  grid: {
+                    color: gridcolor
+                 } ,
+
+                 ticks:{
+                    display: false 
+                }
+
+            },
+
+        },
+
+        plugins: {
+            title: {
+               color: txtcolor,
+               padding: 10
+            }
+        }
+    }
+});
+
+const data3 =  {
+    labels: ['SQL', 'MongoDB', 'SQLite', 'MySQL'  ],
+    datasets: [{
+      label: 'Databases',
+      data: [92, 86, 77,91 ],
+      backgroundColor: bgColor ,
+      borderColor: 'light blue',
+      pointHoverBorderColor: 'black',
+      borderWidth: 1
+    }]
+  };
+    
+const ctx3=document.getElementById('chart3');
+new Chart(ctx3,{
+    type:'radar',
+    data: data3,
+    options:{
+			 
+        responsive:true,
+        maintainAspectRatio:false,
+        scales: {
+              
+            r:{
+                angleLines: {
+                    color: anglelines
+                  },
+
+                  pointLabels: {
+                    color: txtcolor
+                  },
+
+                  grid: {
+                    color: gridcolor
+                 } ,
+
+                 ticks:{
+                    display: false 
+                }
+
+            },
+
+        },
+
+        plugins: {
+            title: {
+               color: txtcolor,
+                
+            }
+        }
+    }
+});
+
+const data4 =  {
+    labels: ['PowerBI', 'AWS', 'Docker', 'Git'  ],
+    datasets: [{
+      label: 'Tools',
+      data: [80,75,87,85 ],
+      backgroundColor: bgColor ,
+      borderColor: 'light blue',
+      pointHoverBorderColor: 'black',
+      borderWidth: 1
+    }]
+  };
+    
+const ctx4=document.getElementById('chart4');
+new Chart(ctx4,{
+    type:'radar',
+    data: data4,
+    options:{
+			 
+        responsive:true,
+        maintainAspectRatio:false,
+        scales: {
+              
+            r:{
+                angleLines: {
+                    color: anglelines
+                  },
+
+                  pointLabels: {
+                    color: txtcolor
+                  },
+
+                  grid: {
+                    color: gridcolor
+                 } ,
+
+                 ticks:{
+                    display: false 
+                }
+
+            },
+
+        },
+
+        plugins: {
+            title: {
+               color: txtcolor,
+                
+            }
+        }
+    }
+});
