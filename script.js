@@ -132,6 +132,9 @@ const ctx=document.getElementById('chart1');
             plugins: {
                 title: {
                    color: txtcolor,
+			font: {
+                            size:14
+                        }
                     
                 }
             }
@@ -166,7 +169,10 @@ new Chart(ctx2,{
                   },
 
                   pointLabels: {
-                    color: txtcolor
+                    color: txtcolor,
+			  font: {
+                            size:14
+                        }
                   },
 
                   grid: {
@@ -218,7 +224,10 @@ new Chart(ctx3,{
                   },
 
                   pointLabels: {
-                    color: txtcolor
+                    color: txtcolor,
+			  font: {
+                            size:14
+                        }
                   },
 
                   grid: {
@@ -270,7 +279,10 @@ new Chart(ctx4,{
                   },
 
                   pointLabels: {
-                    color: txtcolor
+                    color: txtcolor,
+			  font: {
+                            size:14
+                        }
                   },
 
                   grid: {
