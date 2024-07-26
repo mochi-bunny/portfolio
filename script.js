@@ -114,7 +114,10 @@ const ctx=document.getElementById('chart1');
                       },
 
                       pointLabels: {
-                        color: txtcolor
+                        color: txtcolor,
+			      font: {
+                            size:14
+                        }
                       },
 
                       grid: {
