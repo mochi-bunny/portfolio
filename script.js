@@ -258,7 +258,7 @@ const data4 =  {
     labels: ['PowerBI', 'AWS', 'Azure', 'Docker', 'Git'  ],
     datasets: [{
       label: 'Tools',
-      data: [80,85,87,78 ,80 ],
+      data: [80,85,87,82 ,80 ],
       backgroundColor: bgColor ,
       borderColor: 'light blue',
       pointHoverBorderColor: 'black',
