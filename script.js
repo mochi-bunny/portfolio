@@ -255,10 +255,10 @@ new Chart(ctx3,{
 });
 
 const data4 =  {
-    labels: ['PowerBI', 'AWS', 'Docker', 'Git'  ],
+    labels: ['PowerBI', 'AWS', 'Azure', 'Docker', 'Git'  ],
     datasets: [{
       label: 'Tools',
-      data: [80,75,87,85 ],
+      data: [80,85,87,78 ,80 ],
       backgroundColor: bgColor ,
       borderColor: 'light blue',
       pointHoverBorderColor: 'black',
