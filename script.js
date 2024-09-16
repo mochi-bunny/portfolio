@@ -200,7 +200,7 @@ new Chart(ctx2,{
 });
 
 const data3 =  {
-    labels: ['SQL', 'MongoDB', 'SQLite', 'MySQL'  ],
+    labels: ['SQL', 'MongoDB', 'Firebase', 'Pinecone'  ],
     datasets: [{
       label: 'Databases',
       data: [92, 86, 77,91 ],
